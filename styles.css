@@ -46,7 +46,7 @@ header {
 }
 
 header img {
-    height: 60px;
+    height: 50px;
     margin: 0;
     padding: 0;
 }
@@ -230,39 +230,24 @@ section p {
 /* Projects */
 #projects {
     background-color: var(--color-background);
+    width: 100%;
 }
 
 #projects h2 {
     color: var(--about-background);
 }
 
+.slider h3 {
+    margin: 0 0 1rem;
+}
+
 .slider {
     background-color: var(--color-background);
     position: relative;
     overflow: hidden;
-    padding: 5rem 0;
     margin: 5rem 0;
     white-space: nowrap;
-}
-
-.slider::before,
-.slider::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 2;
-}
-
-.slider::before {
-    background: linear-gradient(to left, transparent, var(--color-background));
-    left: 0;
-}
-
-.slider::after {
-    background: linear-gradient(to right, transparent, var(--color-background));
-    right: 0;
+    width: 100%;
 }
 
 .slider:hover .images-slider {
@@ -270,15 +255,15 @@ section p {
 }
 
 .images-slider {
-    animation: 10s slide infinite linear;
+    animation: 25s slide infinite linear;
     display: inline-block;
     will-change: transform;
 }
 
 .images-slider img {
-    height: 40px;
+    height: 400px;
     width: auto;
-    margin: 0 4rem;
+    padding: 0 4rem;
 }
 
 @keyframes slide {
@@ -289,6 +274,22 @@ section p {
         transform: translateX(-100%);
     }
 }
+
+.ocean-view {
+    margin: 0 0 4rem;
+    
+}
+
+#projects h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+.ocean-view iframe{
+    width: 80vw;
+    height: 550px;
+    border: 4px ridge var(--color-teal);
+    border-radius: 50px;
+}
 /* End of projects */
 
 /* Contact */
@@ -297,7 +298,56 @@ section p {
 }
 
 #contact h2 {
-    color: var(--color-teal);
+    color: var(--color-background);
+}
+
+form {
+    color: var(--color-background);
+    border: 2px ridge var(--color-background);
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px var(--color-background);
+}
+
+form p {
+    margin: 2rem;
+}
+
+form input, textarea {
+    background-color: var(--about-background);
+    width: 30vw;
+    height: 2rem;
+    border: 1px solid var(--color-background);
+    border-radius: 1rem;
+}
+
+form textarea {
+    height: 6rem;
+}
+
+form button {
+    background-color: #7A52C2;
+    color: var(--about-background);
+    border-radius: 1rem ;
+    padding: .5rem 2rem;
+}
+
+.websites {
+    margin: 4rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    color: var(--color-background);
+}
+
+.site-image {
+    width: 180px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+.site-image:hover {
+    box-shadow: 2px 2px 4px var(--color-purple);
+    border: 1px solid var(--color-purple);
 }
 /* End of contact */
 
@@ -308,6 +358,33 @@ footer {
     padding: 2rem;
     color: var(--color-gray);
     border-top: 2px solid var(--color-purple);
+}
+
+/* Social Icons */
+.social-icons {
+    justify-content: center;
+    padding: 30px;
+    display: flex;
+    gap: 8rem;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+footer ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    transform: translate(34%, 0);
+}
+
+footer li {
+    padding: 0 2rem 2rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
 }
 
 /* Responsive Design */

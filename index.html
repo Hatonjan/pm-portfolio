@@ -32,7 +32,7 @@
                 <p>
                     I’ve spent 17 years of experience in the construction 
                     industry, including 5 years of managing 
-                    multiple projects.
+                    multiple projects for a welding company.
                 </p>
                 <a href="#about">About Me <span class="arrow-right">→</span></a>
                 <a href="#">Resume <span class="arrow-right">→</span></a>
@@ -44,7 +44,7 @@
                 <h2>About Me</h2>
                 <p>
                     With 17 years of experience in the construction industry, including 5 years leading 
-                    multiple projects. I bring a deep understanding of operational workflows and 
+                    multiple projects for a welding company. I bring a deep understanding of operational workflows and 
                     technical precision. I apply mathematical principles like the Pythagorean theorem 
                     and leverage software tools to enhance documentation and streamline fabrication 
                     processes. My 15 years of experience with 3D modeling and 2D drawing have helped 
@@ -97,6 +97,7 @@
         <section id="projects">
             <h2>Projects</h2>
             <article class="slider">
+                <h3>3D models & 2d Drawings</h3>
                 <div class="images-slider">
                     <img src="./assets/img/slider/stairs-case.jpg" alt="A 3d model of a star case">
                     <img src="./assets/img/slider/handrail.png" alt="A 3d model of a handrail">
@@ -108,6 +109,28 @@
                     <img src="./assets/img/slider/staircase.jpg" alt="A 2d drawing of a guardrail">
                 </div>
             </article>
+
+            <h2>Documentation</h2>
+            <article class="ocean-view">
+                    <h3>Project Charter</h3>
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQufLmMyUCp6sI_xewvtD-5_NVBK2vo08Tj8LNLLhjP2hvHCst1E2CJ64JQ2OZOTZ0TuWgocfvSQzMR/pub" 
+                            title="A Google doc whit the description of a construction project">
+                    </iframe>
+            </article>
+            
+            <article class="ocean-view">
+                    <h3>Dashboard</h3>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_yH3lkVa6gJXvVyuOicLCObakT5AKmSVzUehTHxborN8lzZsQGnqLWl89MAWyIAHlTZZmv_qmDpbI/pubhtml" 
+                            title="A Google sheet whit the description and information of a project">
+                    </iframe>
+            </article>
+            
+            <article class="ocean-view">
+                <h3>Visualizations</h3>
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJrtdjgHnG7qPkOZOm5Jj-c-Mmf-S6enKis1e5Zzjx4ekZ_ckowAM7gEiKLu7BX78oc5ixA00CBCnN/pubhtml" 
+                    title="A Google sheet whit visualization">
+                </iframe>
+            </article>
         </section>
 
         <section id="contact">
@@ -115,31 +138,61 @@
             <form name="contact" netlify method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact">
                 <p>
-                    <label>Name:<br> <input type="text" name="name" required></label>
+                    <label>Name:<br> 
+                        <input type="text" name="name" required>
+                    </label>
                 </p>
                 <p>
-                    <label>Email:<br> <input type="email" name="email" required></label>
+                    <label>Email:<br> 
+                        <input type="email" name="email" required>
+                    </label>
                 </p>
                 <p>
-                    <label>Message:<br> <textarea name="message" required></textarea></label>
+                    <label>Message:<br> 
+                        <textarea name="message" required></textarea>
+                    </label>
                 </p>
                 <p>
                     <button type="submit">Reach Out</button>
                 </p>
             </form>
+            <article class="websites">
+                <div>
+                    <figure>
+                        <a href="https://portfolio.mjscott.dev" target="_blank"><img src="./assets/img/porfolio-website.png" 
+                            class="site-image" alt="The hero section of my portfolio website">
+                        </a>
+                    </figure>
+                    <p>Portfolio Website</p>
+                </div>
+
+                <div>
+                    <figure>
+                        <a href="https://mjscott.dev" target="_blank"><img src="./assets/img/web-design.png" 
+                            class="site-image" alt="The logo of my web design website">
+                        </a>
+                    </figure>
+                    <p>Freelance Website</p>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/jonathan-sc0tt" aria-label="LinkedIn" target="_blank"><img src="./assets/icons/linkedin.svg" alt="LinkedIn logo" ></a>
+            <a href="https://github.com/Hatonjan" aria-label="GitHub" target="_blank"><img src="./assets/icons/github.svg" alt="GitHub logo" ></a>
+            <a href="mailto:jonathan@mjscott.dev" aria-label="Email" target="_blank"><img src="./assets/icons/gmail.svg" alt="Gmail logo" ></a>
+        </div>
+
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <p>&copy; 2025 Jonathan Scott Designs. All rights reserved.</p>
         <p>This site was independently created for personal use and is not affiliated with any institution.</p>
+        <p>&copy; 2025 Jonathan Scott Designs. All rights reserved.</p>
     </footer>
 
     <script src="./index.js"></script>
