@@ -8,9 +8,12 @@
 </head>
 <body>
     <header>
+        <figure>
+            <img src="./assets/svg/logo.svg" alt="the logo of the website">
+        </figure>
         <nav>
             <ul>
-                <li><a href="#main">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -19,30 +22,126 @@
     </header>
 
     <main>
-        <section id="main">
-            <h1>Welcome</h1>
-            <p>Main section content goes here.</p>
+        <section id="home">
+            <figure>
+                <img src="./assets/img/hero.png" alt="Google project manager batch rounded by project management-related icons">
+            </figure>
+            <div class="hero-container">
+                <h3>I'm</h3>
+                <h1>Jonathan Scott</h1>
+                <p>
+                    I’ve spent 17 years of experience in the construction 
+                    industry, including 5 years of managing 
+                    multiple projects.
+                </p>
+                <a href="#about">About Me <span class="arrow-right">→</span></a>
+                <a href="#">Resume <span class="arrow-right">→</span></a>
+            </div>
         </section>
 
         <section id="about">
-            <h2>About</h2>
-            <p>About section content goes here.</p>
+            <article>
+                <h2>About Me</h2>
+                <p>
+                    With 17 years of experience in the construction industry, including 5 years leading 
+                    multiple projects. I bring a deep understanding of operational workflows and 
+                    technical precision. I apply mathematical principles like the Pythagorean theorem 
+                    and leverage software tools to enhance documentation and streamline fabrication 
+                    processes. My 15 years of experience with 3D modeling and 2D drawing have helped 
+                    me identify potential issues early, ensuring smoother transitions into the fabrication 
+                    phase and reducing costly delays.
+                </p>
+
+                <div class="about-images">
+                    <figure>
+                        <img src="./assets/img/gantt-chart.png" alt="A gantt chart">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/picket-layout.png" alt="A blue print whit step by step instructions">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="education">
+                <h2>Education</h2>
+                <figure>
+                    <img class="uol-logo" src="./assets/img/university-of-london-logo.png" width="220" alt="The University of London logo">
+                </figure>
+                <p>
+                    Currently pursuing a Bachelor of Science in Computer Science through 
+                    the University of London’s international program. (Expected 2028)
+                </p>
+
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <a href=""><li>QC Inspection on Steel Fabrication</a> - City of Los Angeles, Sep 2021.</li>
+                        <br>
+                        <a href=""><li>Google Project Management Specialization</a> - Coursera, Mar 2024.</li>
+                        <br>
+                        <a href=""><li>Johns Hopkins University: Algebra Elementary to Advanced</a> - Coursera - Sep 2024</li>
+                        <br>
+                        <a href=""><li>University of London: Introduction to Computer Science and Programming Specialization</a> - Coursera - June 2024</li>
+                        <br>
+                        <a href=""><li>IBM Data Science Professional Certificate</a> - Coursera Dec 2024</li>
+                        <br>
+                        <a href=""><li>Google IT Professional Certificate</a> - Coursera Feb 2025.</li>
+                    </ul>
+                </div>
+                <figure>
+                    <img src="./assets/img/about.jpg" alt="A laptop in the center whit multiple connections to different websites">
+                </figure>
+            </article>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>Projects section content goes here.</p>
+            <article class="slider">
+                <div class="images-slider">
+                    <img src="./assets/img/slider/stairs-case.jpg" alt="A 3d model of a star case">
+                    <img src="./assets/img/slider/handrail.png" alt="A 3d model of a handrail">
+                    <img src="./assets/img/slider/small-gate.JPG" alt="A 3d model of a meta gate">
+                    <img src="./assets/img/slider/fence.png" alt="A 3d model of a fence panel">
+                    <img src="./assets/img/slider/handrail-layout.png" alt="A 2d drawing of a handrail">
+                    <img src="./assets/img/slider/picket-layout.png" alt="A 2d drawing of a fence panel">
+                    <img src="./assets/img/slider/serrano.jpg" alt="A 2d drawing of a plate connections">
+                    <img src="./assets/img/slider/staircase.jpg" alt="A 2d drawing of a guardrail">
+                </div>
+            </article>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Contact section content goes here.</p>
+            <h2>Let’s  Talk</h2>
+            <form name="contact" netlify method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+                <p>
+                    <label>Name:<br> <input type="text" name="name" required></label>
+                </p>
+                <p>
+                    <label>Email:<br> <input type="email" name="email" required></label>
+                </p>
+                <p>
+                    <label>Message:<br> <textarea name="message" required></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Reach Out</button>
+                </p>
+            </form>
         </section>
     </main>
 
     <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
         <p>&copy; 2025 Jonathan Scott Designs. All rights reserved.</p>
         <p>This site was independently created for personal use and is not affiliated with any institution.</p>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
