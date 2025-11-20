@@ -371,7 +371,7 @@ form textarea {
 }
 
 form button {
-    background-color: #7A52C2;
+    background-color: var(--color-background);
     color: var(--about-background);
     border-radius: 1rem ;
     padding: .5rem 2rem;
