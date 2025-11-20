@@ -1,0 +1,502 @@
+/* Fonts */
+/*  */
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../assets/fonts/Alexandria/Alexandria-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Color palette */
+    --color-gray: #6E6E6E;
+    --color-purple: #7A52C2;
+    --color-teal: #00B2A9;
+    --color-orange: #F05A28;
+    --color-navy: #002855;
+    --color-background: #230F43;
+    --color-text: #E9E7E4;
+    --gradient-top: #16062B;
+    --gradient-bottom: #230F43;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alexandria';
+    background-color: var(--color-background);
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-text);
+    padding: 1rem 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--color-background);
+}
+
+header img {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav ul {
+    margin: 0 5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav ul li a {
+    color: var(--color-background);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-orange);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-background);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+/* End of navbar */
+/* End of header */
+
+/* Start of the resume section */
+#resume {
+    background-color: var(color-background);
+}
+
+#resume h1{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#resume p{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: var(--color-teal);
+}
+/* End of title */
+
+/* About section */
+#about {
+    background-color: var(--color-text);
+    margin: 4rem 2rem 0;
+    color: var(--color-background);
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 3rem;
+}
+
+#about h2 {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    font-size: 2.5rem;
+}
+
+#about p {
+    margin: 0 12.5%;
+    text-align: left;
+    font-size: 1.125rem;
+}
+/* End of about */
+
+/* Experience section */
+#experience {
+    background-color: var(--color-text);
+    margin: 0 2rem ;
+    color: var(--color-background);
+}
+
+#experience h2 {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    font-size: 2.5rem;
+}
+
+#experience h3 {
+    padding-left: 12.5%;
+    font-size: 1.5rem;
+}
+
+#experience p, ul {
+    margin: 0 12.5%;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+#experience ul{
+    padding: 0 0 4rem 3rem;
+}
+/* End of experience */
+
+/* Technical Skills section */
+#technical-skills {
+    background-color: var(--color-text);
+    margin: 0 2rem;
+    color: var(--color-background);
+}
+
+#technical-skills h2 {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    font-size: 2.5rem;
+}
+
+#technical-skills ul {
+    margin: 0 12.5%;
+    text-align: left;
+    font-size: 1.125rem;
+    padding-bottom: 4rem;
+}
+/* End of technical skills */
+
+/* Education section */
+#education {
+    background-color: var(--color-text);
+    margin: 0 2rem;
+    color: var(--color-background);
+    border-radius: 0 0 50px 50px;
+}
+
+#education h2 {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    font-size: 2.5rem;
+}
+
+#education p {
+    margin: 0 1rem;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+.university {
+    display: flex;
+    padding-left: 12.5%;
+}
+
+.university img {
+    height: 60px;
+}
+
+.certifications {
+    padding-bottom: 4rem;
+}
+/* End of education */
+
+/* Cal To Action Buttons */
+#cta-buttons {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#cta-buttons a {
+    text-align: center;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    padding: 1rem 2rem;
+    min-width: 12.5%;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#cta-buttons a:hover {
+    font-weight: bold;
+    padding: 1rem 1.83rem;
+    box-shadow: 2px 2px 4px var(--color-teal);
+    transition: all 0.3s ease;
+} 
+/* End of CTA buttons */
+
+/* Footer Styles */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-gray);
+    border-top: 2px solid var(--color-purple);
+}
+
+/* Websites */
+.websites {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    color: var(color-background);
+}
+
+.site-image {
+    width: 180px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+.site-image:hover {
+    box-shadow: 2px 2px 4px var(--color-purple);
+    border: 1px solid var(--color-purple);
+    transition: all 0.3s ease;
+}
+
+/* Social Icons */
+.social-icons {
+    justify-content: center;
+    padding: 30px;
+    display: flex;
+    gap: 8rem;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+footer ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    transform: translate(34%, 0);
+}
+
+footer li {
+    padding: 0 2rem 2rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
+/* End of footer */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide nav by default on mobile */
+    nav {
+        background-color: var(--color-text);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80vw;
+        height: 50vh;
+        transition: right 0.3s ease;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    section h1, section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    /* Start of the resume section */
+    #resume h1{
+        margin: 4rem 1rem 0; 
+        font-size: 1.875rem;
+    }
+
+    #resume p{
+        font-size: 1.125rem;
+    }
+
+    .contact-links {
+        margin: 0 1rem;
+        display: inline-block;
+    }
+    /* End of title */
+
+    /* About section */
+    #about {
+        margin: 1rem 1rem 0;
+    }
+    #about p {
+        margin: 0 10%;
+    }
+    /* End of about */
+
+    /* Experience section */
+    #experience {
+        margin: 0 1rem ;
+    }
+
+    #experience h3 {
+        padding-left: 10%;
+    }
+
+    #experience p, ul {
+        margin: 0 10%;
+    }
+    /* End of experience */
+
+    /* Technical Skills section */
+    #technical-skills {
+        margin: 0 1rem;
+    }
+    /* End of technical skills */
+
+    /* Education section */
+    #education {
+        margin: 0 1rem;
+    }
+
+    #education p {
+        margin: 0 1rem;
+    }
+
+    .university {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+    }
+
+    .university img {
+        height: 60px;
+    }
+
+    .certifications {
+        padding-bottom: 4rem;
+    }
+    /* End of education */
+
+    /* Cal To Action Buttons */
+    #cta-buttons {
+        margin: 2rem;
+        gap: 2rem;
+    }
+
+    #cta-buttons a {
+        padding: .5rem 1rem;
+    }
+
+    #cta-buttons a:hover {
+        font-weight: bold;
+        padding: 1rem 1.83rem;
+        box-shadow: 2px 2px 4px var(--color-teal);
+        transition: all 0.3s ease;
+    } 
+    /* End of CTA buttons */
+
+        /* Footer Styles */
+        footer {
+            padding: 2rem;
+            color: var(--color-gray);
+            border-top: 2px solid var(--color-purple);
+        }
+
+        /* Websites */
+        .websites {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            gap: 4rem;
+        }
+
+        .social-icons img {
+            width: 40px;
+        }
+
+        footer ul {
+            justify-content: center;
+            display: flex;
+            transform: none;
+        }
+
+        footer li {
+            padding: 0 1rem 2rem;
+        }
+
+        footer p {
+            padding-bottom: 1rem;
+            font-size: .75rem;
+        }
+        /* End of footer */
+}

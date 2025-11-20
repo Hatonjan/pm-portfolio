@@ -16,7 +16,7 @@
     --color-orange: #F05A28;
     --color-navy: #002855;
     --color-background: #230F43;
-    --about-background: #E9E7E4;
+    --color-text: #E9E7E4;
     --gradient-top: #16062B;
     --gradient-bottom: #230F43;
 }
@@ -39,11 +39,12 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--about-background);
+    background-color: var(--color-text);
     padding: 1rem 2rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid var(--color-background);
 }
 
 header img {
@@ -147,7 +148,7 @@ section p {
 
 .hero-container {
     margin-right: 100px ;
-    color: var(--about-background);
+    color: var(--color-text);
 }
 
 .hero-container h1 {
@@ -166,7 +167,7 @@ section p {
 }
 
 .hero-container a {
-    background-color: var(--about-background);
+    background-color: var(--color-text);
     font-size: 1.25rem;
     padding: 1rem 2rem;
     margin-right: 2rem;
@@ -178,6 +179,7 @@ section p {
     font-weight: bold;
     padding: 1rem 1.83rem;
     box-shadow: 2px 2px 4px var(--color-teal);
+    transition: all 0.3s ease;
 }
 
 .arrow-right {
@@ -187,7 +189,7 @@ section p {
 
 /* About */
 #about {
-    background-color: var(--about-background);
+    background-color: var(--color-text);
     border-radius: 50px;
 }
 
@@ -272,7 +274,7 @@ section p {
 }
 
 #projects h2 {
-    color: var(--about-background);
+    color: var(--color-text);
 }
 
 .slider h3 {
@@ -335,7 +337,7 @@ section p {
 
 /* Contact */
 #contact {
-    background-color: var(--about-background);
+    background-color: var(--color-text);
 }
 
 #contact h2 {
@@ -355,7 +357,7 @@ form p {
 
 form input, textarea {
     font-family: 'Alexandria';
-    background-color: var(--about-background);
+    background-color: var(--color-text);
     border: 1px solid var(--color-background);
     color: var(--color-background);
     width: 30vw;
@@ -371,16 +373,26 @@ form textarea {
 }
 
 form button {
-    background-color: var(--color-background);
-    color: var(--about-background);
+    background-color: #4f159b ;
+    color: var(--color-text);
     border-radius: 1rem ;
     padding: .5rem 2rem;
 }
+/* End of contact */
 
+/* Footer Styles */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-gray);
+    border-top: 2px solid var(--color-purple);
+}
+
+/* Websites */
 .websites {
-    margin: 4rem 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 6rem;
     color: var(--color-background);
 }
@@ -394,16 +406,7 @@ form button {
 .site-image:hover {
     box-shadow: 2px 2px 4px var(--color-purple);
     border: 1px solid var(--color-purple);
-}
-/* End of contact */
-
-/* Footer Styles */
-footer {
-    background-color: white;
-    text-align: center;
-    padding: 2rem;
-    color: var(--color-gray);
-    border-top: 2px solid var(--color-purple);
+    transition: all 0.3s ease;
 }
 
 /* Social Icons */
@@ -448,7 +451,7 @@ footer p {
 
     /* Hide nav by default on mobile */
     nav {
-        background-color: var(--about-background);
+        background-color: var(--color-text);
         position: fixed;
         top: 0;
         right: -100%;
@@ -635,12 +638,6 @@ footer p {
     form textarea {
         padding-top: .25rem;
     }
-
-    .websites {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    }
     /* End of contact */
 
     /* Footer Styles */
@@ -648,6 +645,13 @@ footer p {
         padding: 2rem;
         color: var(--color-gray);
         border-top: 2px solid var(--color-purple);
+    }
+
+    /* Websites */
+    .websites {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     /* Social Icons */

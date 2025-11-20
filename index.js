@@ -1,6 +1,9 @@
-// Slider functionality
-const sliderCopy = document.querySelector('.images-slider').cloneNode(true);
-document.querySelector('.slider').appendChild(sliderCopy);
+// Slider functionality (only on pages with slider)
+const slider = document.querySelector('.slider');
+if (slider) {
+    const sliderCopy = document.querySelector('.images-slider').cloneNode(true);
+    slider.appendChild(sliderCopy);
+}
 
 // Hamburger menu functionality
 const hamburger = document.querySelector('.hamburger');
