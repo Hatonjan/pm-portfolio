@@ -11,6 +11,11 @@
         <figure>
             <img src="./assets/svg/logo.svg" alt="the logo of the website">
         </figure>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -34,8 +39,10 @@
                     industry, including 5 years of managing 
                     multiple projects for a welding company.
                 </p>
-                <a href="#about">About Me <span class="arrow-right">→</span></a>
-                <a href="#">Resume <span class="arrow-right">→</span></a>
+                <div class="hero-buttons">
+                    <a href="#about">About Me <span class="arrow-right">→</span></a>
+                    <a href="#">Resume <span class="arrow-right">→</span></a>
+                </div>
             </div>
         </section>
 
@@ -110,10 +117,10 @@
                 </div>
             </article>
 
-            <h2>Documentation</h2>
+            <h2>Ocean View Project</h2>
             <article class="ocean-view">
                     <h3>Project Charter</h3>
-                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQufLmMyUCp6sI_xewvtD-5_NVBK2vo08Tj8LNLLhjP2hvHCst1E2CJ64JQ2OZOTZ0TuWgocfvSQzMR/pub" 
+                    <iframe style="padding: 0 0 0 15%;" src="https://docs.google.com/document/d/e/2PACX-1vQufLmMyUCp6sI_xewvtD-5_NVBK2vo08Tj8LNLLhjP2hvHCst1E2CJ64JQ2OZOTZ0TuWgocfvSQzMR/pub?embedded=true" 
                             title="A Google doc whit the description of a construction project">
                     </iframe>
             </article>
@@ -134,7 +141,7 @@
         </section>
 
         <section id="contact">
-            <h2>Let’s  Talk</h2>
+            <h2>Lets Talk About Your Project</h2>
             <form name="contact" netlify method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact">
                 <p>
