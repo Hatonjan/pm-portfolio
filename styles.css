@@ -248,6 +248,10 @@ section p {
     margin-bottom: 4rem;
 }
 
+.certifications li {
+    padding: .5rem 0;
+}
+
 .certifications a {
     color: var(--color-background);
 }

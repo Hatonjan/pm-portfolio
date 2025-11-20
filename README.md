@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing professional experience in con
 
 ## 🌐 Live Demo
 
-[View Live Site](https://hatonjan.github.io/pm-portfolio)
+[View Live Site](https://pm.mjscott.dev)
 
 ## 📋 About
 
