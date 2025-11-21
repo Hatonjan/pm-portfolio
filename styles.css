@@ -146,6 +146,32 @@ section p {
     margin-left: 100px;
 }
 
+.hero-animation {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.base-image {
+    position: absolute;
+    left: 8%;
+    padding-top: 2rem;
+}
+
+.rotating-image {
+    position: relative;
+    animation: spin 45s linear infinite;;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .hero-container {
     margin-right: 100px ;
     color: var(--color-text);
@@ -502,6 +528,15 @@ footer p {
     #home img {
         width: 80vw;
         
+    }
+    
+    .base-image {
+        left: 21%;
+    }
+
+    .base-image  img {
+        width: 55% !important;
+        padding-top: 1rem;
     }
 
     .hero-container {
